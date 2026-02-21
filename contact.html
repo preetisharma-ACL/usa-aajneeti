@@ -33,8 +33,8 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     </head>
-
     <body>
         <!-- page wrapper start -->
         <div class="page-wrapper">
@@ -139,7 +139,7 @@
                     <!-- offcanvas contact end -->
                     <!-- offcanvas button wapper start -->
                     <div class="offcanvas-button-wapper">
-                        <a href="booking.html" class="theme-button style-1"
+                        <a href="contact.html" class="theme-button style-1"
                             aria-label="Book Now">
                             Book Now
                         </a>
@@ -410,9 +410,7 @@
                                     <!-- section title end -->
                                     <!-- default-form start -->
                                     <div class="default-form contact-form">
-                                        <form action="contact.php" method="POST"
-                                            id="contact"
-                                            novalidate="novalidate">
+                                        <form id="ajax-header-contact">
                                             <div class="row">
                                                 <div
                                                     class="col-lg-12 col-md-12">
@@ -423,7 +421,7 @@
                                                                 for="name">Name*</label>
                                                             <input id="name"
                                                                 class="form-control"
-                                                                name="name"
+                                                                name="name1"
                                                                 type="text"
                                                                 autocomplete="off"
                                                                 placeholder="Your Full Name"
@@ -442,7 +440,7 @@
                                                                 for="email">Email*</label>
                                                             <input id="email"
                                                                 class="form-control"
-                                                                name="email"
+                                                                name="ef_email2"
                                                                 type="email"
                                                                 autocomplete="off"
                                                                 placeholder="Your Email"
@@ -481,7 +479,7 @@
                                                                 for="subject">City</label>
                                                             <input id="subject"
                                                                 class="form-control"
-                                                                name="subject"
+                                                                name="City"
                                                                 type="text"
                                                                 autocomplete="off"
                                                                 placeholder="Your City"
@@ -766,6 +764,7 @@
         <script src="assets/js/jquery.syotimer.min.js"></script>
         <!-- main Js -->
         <script src="assets/js/main.js"></script>
+        <script src="assets/js/form.js"></script>
     </body>
 
 </html>
