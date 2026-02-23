@@ -18134,12 +18134,12 @@ li i {
 
   /*  REAL CURVE (5 cards only) */
 
-  .left.mid {
+  /* .left.mid {
     left: -30px;
     top: 60px;
     transform: rotate(-15deg) scale(0.9) !important;
     z-index: 1;
-  }
+  } */
 
   .left.near {
     left: 36px;
@@ -18162,12 +18162,12 @@ li i {
     z-index: 2;
   }
 
-  .right.mid {
+  /* .right.mid {
     right: -30px;
     top: 60px;
     transform: rotate(15deg) scale(0.9) !important;
     z-index: 1;
-  }
+  } */
 }
 
 
@@ -18178,7 +18178,7 @@ li i {
 @media (max-width: 480px) {
 
   .people-cards {
-    max-width: 234px;
+    max-width: 330px;
     height: 210px;
   }
 
