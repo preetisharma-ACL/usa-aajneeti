@@ -1942,6 +1942,70 @@
                </main>
                <!-- main end -->
 
+               <!-- Modal -->
+               <div class="modal fade" id="contactModal" tabindex="-1">
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                     <div class="modal-content border-0 modal-bg">
+
+                        <!-- Background Shapes -->
+                        <div class="shape1"></div>
+                        <div class="shape2"></div>
+
+                        <!-- Close Button -->
+                        <button type="button"
+                           class="btn-close position-absolute close-btn m-3"
+                           data-bs-dismiss="modal"
+                           aria-label="Close"></button>
+                        <div class="modal-body p-4">
+                           <div class="contact-card">
+                              <h5>Get In Touch With Us</h5>
+                              <p>Email us with any questions or inquiries or use
+                                 our contact data.</p>
+                              <form>
+                                 <div class="row g-3">
+                                    <div class="col-lg-6">
+                                       <div class="modal-img">
+                                          <img
+                                             src="assets/images/offer/banner4.jpg" />
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-6">
+
+                                       <div class="col-md-12">
+
+                                          <input type="text"
+                                             class="form-control modal-control"
+                                             placeholder="Your Full Name">
+                                       </div>
+
+                                       <div class="col-md-12">
+                                          <input type="text"
+                                             class="form-control modal-control"
+                                             placeholder="Your Mobile Number ">
+                                       </div>
+                                       <div class="col-md-12">
+                                          <input type="email"
+                                             class="form-control modal-control"
+                                             placeholder="Your Email ">
+                                       </div>
+                                       <div class="col-md-12">
+                                          <input type="text"
+                                             class="form-control modal-control"
+                                             placeholder="Enter your City">
+                                       </div>
+                                       <div class="submit-wrapper">
+                                          <button type="submit"
+                                             class="btn btn-submit mt-3">SUBMIT</button>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </form>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
                <!-- footer start -->
                <footer class="footer footer-3">
                   <!-- footer bottom start -->
@@ -1962,16 +2026,22 @@
                                           <figure>
                                              <img
                                                 src="assets/images/logo/V2-aajneeti-logo.png"
-                                                alt="footer logo" width="180">
+                                                alt="footer logo"
+                                                width="180">
                                           </figure>
                                        </a>
                                     </div>
-                                    <p>Our Digital Marketing Company has a team
-                                       of specialists who work together to help
-                                       you achieve your desired objectives. We
-                                       use the latest technology and marketing
+                                    <p>Our Digital Marketing Company has a
+                                       team
+                                       of specialists who work together to
+                                       help
+                                       you achieve your desired objectives.
+                                       We
+                                       use the latest technology and
+                                       marketing
                                        tools to get you better traffic, more
-                                       engagement, and greater conversions.</p>
+                                       engagement, and greater
+                                       conversions.</p>
                                     <!-- footer contact box start -->
                                     <div class="footer-contact-box">
                                        <div class="footer-contact-list">
@@ -1979,7 +2049,8 @@
                                              <i
                                                 class="fa-solid fa-phone-volume"></i>
                                           </div>
-                                          <div class="footer-contact-content">
+                                          <div
+                                             class="footer-contact-content">
                                              <span>Have Any
                                                 Question?</span>
                                              <a
@@ -2069,7 +2140,8 @@
                                           to receive latest
                                           offers</p>
                                        <!-- subscribe form start -->
-                                       <form action="#" class="subscribe-form"
+                                       <form action="#"
+                                          class="subscribe-form"
                                           id="subscribe-form">
                                           <div class="input-group">
                                              <input type="text" id="emailid"
@@ -2160,6 +2232,20 @@
             <script src="assets/js/jquery.syotimer.min.js"></script>
             <!-- main Js -->
             <script src="assets/js/main.js"></script>
-         </body>
 
+            <script>
+        window.addEventListener("load", function () {
+            setTimeout(function () {
+                const modalEl = document.getElementById("contactModal");
+                const modal = new bootstrap.Modal(modalEl);
+                modal.show();
+            }, 3000);
+            setInterval(function () {
+                const modalEl = document.getElementById("contactModal");
+                const modal = new bootstrap.Modal(modalEl);
+                modal.show();
+            }, 20000);
+        });
+    </script>
+         </body>
       </html>
