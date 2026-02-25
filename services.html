@@ -771,15 +771,95 @@
                                     to Start Lead Delivery</span>
                             </div>
                             <div class="hero-buttons">
-                                <button class="btn-outline">Book Your Strategy
+                                <button class="btn-outline"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#contactModal"
+                                    data-bs-dismiss="modal"
+                                    data-title="Book Your Strategy Call Now!">Book
+                                    Your Strategy
                                     Call
                                     Now!</button>
-                                <button class="btn-fill">Need Real Estate Leads?
+                                <button class="btn-fill" data-bs-toggle="modal"
+                                    data-bs-target="#contactModal"
+                                    data-bs-dismiss="modal"
+                                    data-title="Need
+                                    Real Estate Leads?">Need
+                                    Real Estate Leads?
                                 </button>
                             </div>
                         </div>
                     </section>
                     <!-- cta section end -->
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="contactModal" tabindex="-1">
+                        <div
+                            class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content border-0 modal-bg">
+
+                                <!-- Background Shapes -->
+                                <div class="shape1"></div>
+                                <div class="shape2"></div>
+
+                                <!-- Close Button -->
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close"
+                                        data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+
+                                <div class="modal-body p-4">
+                                    <div class="contact-card">
+                                        <h5 id="modalFormTitle">Get In Touch
+                                            With Us</h5>
+                                        <p>Email us with any questions or
+                                            inquiries or use
+                                            our contact data.</p>
+                                        <form>
+                                            <div class="row g-3">
+                                                <div class="col-lg-6">
+                                                    <div class="modal-img">
+                                                        <img
+                                                            src="assets/images/offer/banner4.jpg" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+
+                                                    <div class="col-md-12">
+
+                                                        <input type="text"
+                                                            class="form-control modal-control"
+                                                            placeholder="Your Full Name">
+                                                    </div>
+
+                                                    <div class="col-md-12">
+                                                        <input type="text"
+                                                            class="form-control modal-control"
+                                                            placeholder="Your Mobile Number ">
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <input type="email"
+                                                            class="form-control modal-control"
+                                                            placeholder="Your Email ">
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <input type="text"
+                                                            class="form-control modal-control"
+                                                            placeholder="Enter your City">
+                                                    </div>
+                                                    <div class="submit-wrapper">
+                                                        <button type="submit"
+                                                            class="btn btn-submit mt-3">SUBMIT</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </main>
                 <!-- main end -->
                 <!-- footer start -->
@@ -964,7 +1044,7 @@
                                         <div class="copyright-text wow fadeInUp"
                                             data-wow-delay=".2s">
                                             <p class="m-0">&#169; Copyright
-                                                2025 All Rights
+                                                2026 All Rights
                                                 Reserved</p>
                                         </div>
                                         <!-- footer copyright end -->
@@ -1031,6 +1111,17 @@
             });
         });
     </script>
+            <script>
+  const modal = document.getElementById('contactModal');
+  const modalTitle = document.getElementById('modalFormTitle');
+
+  modal.addEventListener('show.bs.modal', function (event) {
+    const trigger = event.relatedTarget;
+    const title = trigger.getAttribute('data-title');
+
+    modalTitle.textContent = title ? title : 'Get In Touch With Us';
+  });
+</script>
         </body>
 
     </html>

@@ -14360,7 +14360,7 @@ button:focus {
   display: -moz-flex;
   display: flex;
   gap: 20px;
-  background-color: #ffeaea;
+  background-color: #fff3f3;
   padding: 25px;
   border-radius: var(--border-radius-three);
 }
@@ -14481,7 +14481,7 @@ button:focus {
   z-index: 1;
   padding: 25px;
   border-radius: var(--border-radius-three);
-  background-color: #ffeaea;
+  background-color: #fff3f3;
 }
 
 @media (max-width: 1199px) {
@@ -18653,10 +18653,7 @@ li i {
 .submit-wrapper {
   text-align: center;
 } */
-.close-btn {
-  top: -10px;
-  right: -6px;
-}
+
 
 .modal-img img {
   width: 100%;
@@ -18677,4 +18674,9 @@ li i {
   .modal-img img {
     height: 100%;
   }
+}
+
+.btn-close {
+  margin-right: 8px !important;
+  margin-top: 8px !important;
 }

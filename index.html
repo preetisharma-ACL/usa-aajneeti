@@ -290,14 +290,19 @@
                         Leads</span>
                   </div>
                   <div class="hero-buttons">
-                     <a href="contact.html">
-                        <button class="btn-outline">Book Your
-                           Strategy
-                           Call
-                           Now!</button></a>
-                     <a href="contact.html">
-                        <button class="btn-fill">Need Real Estate
-                           Leads?</button></a>
+                     <button class="btn-outline" data-bs-toggle="modal"
+                        data-bs-target="#contactModal"
+                        data-bs-dismiss="modal"
+                        data-title="Book Your Strategy Call Now!">Book Your
+                        Strategy
+                        Call
+                        Now!</button>
+                     <button class="btn-fill" data-bs-toggle="modal"
+                        data-bs-target="#contactModal"
+                        data-bs-dismiss="modal"
+                        data-title="Need Real Estate
+                           Leads?">Need Real Estate
+                        Leads?</button>
                   </div>
                </div>
             </div>
@@ -1028,11 +1033,23 @@
                                     continuous growth.
                                  </p>
                                  <div class="hero-buttons card-buttons ">
-                                    <button class="btn-outline">Book Your
+                                    <button class="btn-outline"
+                                       data-bs-toggle="modal"
+                                       data-bs-target="#contactModal"
+                                       data-bs-dismiss="modal"
+                                       data-title="Book Your
+                                       Strategy
+                                       Call
+                                       Now!">Book Your
                                        Strategy
                                        Call
                                        Now!</button>
-                                    <button class="btn-fill">Need Real Estate
+                                    <button class="btn-fill"
+                                       data-bs-toggle="modal"
+                                       data-bs-target="#contactModal"
+                                       data-bs-dismiss="modal"
+                                       data-title="Need Real Estate
+                           Leads?">Need Real Estate
                                        Leads?</button>
                                  </div>
                               </div>
@@ -1633,9 +1650,11 @@
                            </div>
                            <div class="col-lg-4">
                               <div class=" solution-button">
-                                 <button class="btn-outline ">Explore
-                                    More Industries
-                                 </button>
+                                 <a href="services.html">
+                                    <button class="btn-outline ">Explore
+                                       More
+                                    </button>
+                                 </a>
                               </div>
                            </div>
                         </div>
@@ -1926,15 +1945,20 @@
                               to Start Lead Delivery</span>
                         </div>
                         <div class="hero-buttons">
-                           <a href="contact.html">
-                              <button class="btn-outline">Book Your Strategy
-                                 Call
-                                 Now!</button>
-                           </a>
-                           <a href="contact.html">
-                              <button class="btn-fill">Need Real Estate Leads?
-                              </button>
-                           </a>
+                           <button class="btn-outline" data-bs-toggle="modal"
+                              data-bs-target="#contactModal"
+                              data-bs-dismiss="modal"
+                              data-title="Book Your Strategy Call Now!">Book
+                              Your Strategy
+                              Call
+                              Now!</button>
+                           <button class="btn-fill" data-bs-toggle="modal"
+                              data-bs-target="#contactModal"
+                              data-bs-dismiss="modal"
+                              data-title="Need
+                              Real Estate Leads?">Need
+                              Real Estate Leads?
+                           </button>
                         </div>
                      </div>
                   </section>
@@ -1952,13 +1976,15 @@
                         <div class="shape2"></div>
 
                         <!-- Close Button -->
-                        <button type="button"
-                           class="btn-close position-absolute close-btn m-3"
-                           data-bs-dismiss="modal"
-                           aria-label="Close"></button>
+                        <div class="modal-header">
+                           <button type="button" class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"></button>
+                        </div>
+
                         <div class="modal-body p-4">
                            <div class="contact-card">
-                              <h5>Get In Touch With Us</h5>
+                              <h5 id="modalFormTitle">Get In Touch With Us</h5>
                               <p>Email us with any questions or inquiries or use
                                  our contact data.</p>
                               <form>
@@ -2180,7 +2206,7 @@
                                  <div class="copyright-text wow fadeInUp"
                                     data-wow-delay=".2s">
                                     <p class="m-0">&#169; Copyright
-                                       2025 All Rights
+                                       2026 All Rights
                                        Reserved</p>
                                  </div>
                                  <!-- footer copyright end -->
@@ -2247,5 +2273,16 @@
             }, 20000);
         });
     </script>
+            <script>
+  const modal = document.getElementById('contactModal');
+  const modalTitle = document.getElementById('modalFormTitle');
+
+  modal.addEventListener('show.bs.modal', function (event) {
+    const trigger = event.relatedTarget;
+    const title = trigger.getAttribute('data-title');
+
+    modalTitle.textContent = title ? title : 'Get In Touch With Us';
+  });
+</script>
          </body>
       </html>
